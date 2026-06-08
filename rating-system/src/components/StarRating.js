@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
 function StarRating(props) {
+    const [count, setCount] = useState(0);
+    
     return (
         <section>
             <nav>
