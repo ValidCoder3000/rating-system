@@ -1,8 +1,11 @@
+import { useState } from 'react'
+
 function StarRating(props) {
     return (
         <section>
             <nav>
                 <ul className="flex">
+                    <h2>{props.heading}</h2>
                     {props.starNum.map(link => (
                         <li key={link.index}>
                             <a href={link.index}>{link.name}</a>
@@ -10,7 +13,6 @@ function StarRating(props) {
                     ))}
                 </ul>
             </nav>
-
         </section>
     );
 }
