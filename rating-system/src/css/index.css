@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import './reset.css';
+
+body {
+    background-color:  rgb(23 24 32);
+    color: #fff;
+}
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+section {
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    color: red;
+
+    button {
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+}
+
+input[type=text] {
+    margin-right: 10px;
+    background-color: transparent;
+    color: rgb(15, 14, 14);
+    border: 1px solid rgba(7, 7, 7, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type=submit] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
