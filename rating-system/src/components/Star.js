@@ -4,7 +4,7 @@ function Star(props) {
     return (
         <FaStar
             onClick={props.onClick}
-            color={props.selected ? "yellow" : "white"}
+            color={props.selected ? "#ffc107" : "#e4e5e9"}
         />
     )
 }
