@@ -1,5 +1,4 @@
 function Dialog(props) {
-  // If isOpen is false, don't display anything
   if (!props.isOpen) return null;
 
   return (

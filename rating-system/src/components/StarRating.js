@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import Star from './Star';
 
 function StarRating(props) {
     const [count, setCount] = useState(0);
 
+    const currentStarObj = props.starNum[count - 1]; 
     return (
         <section>
             <div className="flex">            
