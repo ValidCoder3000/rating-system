@@ -5,16 +5,17 @@ function StarRating(props) {
 
     return (
         <section>
-            <nav>
-                <ul className="flex">
-                    {props.starNum.map(link => (
-                        <li key={link.index}>
-                            <a href={link.index}>{link.name}</a>
-                            <h2>{link.heading}</h2>
-                        </li>  
-                    ))}
-                </ul>
-            </nav>
+            <div className="flex">            
+                {props.starNum.map(link => (
+                    <Star 
+                        key={link.index}
+                        selected={link.index <= count}
+                        onClick={() => {setCount(link.index)}}
+                    />
+                ))}
+            </div>
+
+            <h2>{currentStarObj ? currentStarObj.heading : "Please select a rating."}</h2>
         </section>
     );
 }
