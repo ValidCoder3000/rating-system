@@ -39,3 +39,31 @@ input[type=submit] {
     margin: 10px;
 }
 
+.flex {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.dialogContainer {
+        position: fixed;
+        top: 0;
+         left: 0;
+         right: 0;
+          bottom: 0;
+      backgroundColor: rgba(0,0,0,0.7);
+       display: flex;
+      justify-content: center;
+       alignItems: center;
+}
+
+p {
+    margin: 15px 0 ;
+}
+
+.innerDialogContainer {
+     background: #333;
+      padding: 30px;
+       borderRadius: 10px;
+        textAlign: center ;
+}
